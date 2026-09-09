@@ -3,187 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rohit — Senior iOS Engineer &amp; Tech Lead</title>
-<meta name="description" content="Rohit — Senior Software Engineer / Team Lead. 16 years building iOS products across healthcare, retail and e-commerce.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Rohit — Senior iOS Engineer &amp; Team Lead</title>
+<meta name="description" content="Rohit — Senior iOS Engineer / Team Lead. Sixteen years shipping consumer apps at Wayfair, Deloitte Digital and DaVita.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="layout">
+<header class="navbar">
+  <a href="#top" class="wordmark">Rohit.Natraj</a>
+  <nav class="navlinks" aria-label="Section navigation">
+    <a href="#focus">Focus</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <!-- Persistent identity panel — modeled on an iPad master list -->
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-      <div class="identity">
-        <p class="eyebrow">iOS Engineer / Team Lead</p>
-        <h1>Rohit</h1>
-        <p class="location">Colorado, USA</p>
+<main id="top">
+
+  <section class="hero">
+    <p class="kicker">iOS Engineer · Team Lead</p>
+    <h1>Hi, I'm Rohit —<br>I build iOS.</h1>
+    <p class="hero-sub">Sixteen years shipping consumer apps at Wayfair, Deloitte Digital and DaVita. These days I lead the iOS team behind Wayfair's Shop experience — Browse, product pages, and the moments that turn browsing into buying.</p>
+    <div class="hero-actions">
+      <a href="#experience" class="btn btn-primary">See the work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="focus" class="section">
+    <p class="section-label">Focus</p>
+    <h2>Three ways I show up.</h2>
+    <div class="card-grid">
+
+      <div class="card">
+        <span class="card-glyph">⌘</span>
+        <p class="card-eyebrow">01 · Craft</p>
+        <h3>iOS Engineering</h3>
+        <p>Swift and SwiftUI day to day, Objective‑C when the codebase calls for it. Comfortable in MVVM and VIPER, and opinionated about which one a team actually needs.</p>
       </div>
 
-      <nav class="sidenav" aria-label="Section navigation">
-        <a href="#profile"><span class="idx">01</span>Profile</a>
-        <a href="#experience"><span class="idx">02</span>Experience</a>
-        <a href="#skills"><span class="idx">03</span>Skills</a>
-        <a href="#education"><span class="idx">04</span>Education</a>
-        <a href="#contact"><span class="idx">05</span>Contact</a>
-      </nav>
+      <div class="card">
+        <span class="card-glyph">◎</span>
+        <p class="card-eyebrow">02 · Leadership</p>
+        <h3>Team Lead</h3>
+        <p>Leading a team of 5 iOS engineers at Wayfair — planning, code review, hiring, and the unglamorous work of keeping a squad shipping without burning out.</p>
+      </div>
 
-      <div class="sidebar-foot">
-        <p>16 years shipping software</p>
-        <p>Wayfair · Deloitte Digital · DaVita</p>
+      <div class="card">
+        <span class="card-glyph">▵</span>
+        <p class="card-eyebrow">03 · Range</p>
+        <h3>Beyond the App</h3>
+        <p>An ARKit app for the Denver studio, a WebAuthn login flow, a kegerator wired up with Raspberry Pi and Python. I like projects that touch hardware as much as UI.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <p class="section-label">Experience</p>
+    <h2>Sixteen years, four teams.</h2>
+
+    <div class="grouped-list">
+
+      <article class="row">
+        <div class="row-top">
+          <div>
+            <h3>Senior Software Engineer, Team Lead</h3>
+            <p class="row-org">Wayfair · Colorado</p>
+          </div>
+          <span class="row-dates">2021 — Present</span>
+        </div>
+        <ul class="row-points">
+          <li>Leads a team of <strong>5 iOS engineers</strong> on the Shop squad — Browse and product-detail experiences.</li>
+          <li>Led passwordless sign-in with WebAuthn biometric login — <span class="metric">~95.2%</span> login success rate.</li>
+          <li>Led order status onto the app homepage as a path to discovery and engagement — <span class="metric metric-green">+$30M/yr GMV</span>.</li>
+          <li>Part of the iOS critical team: store submissions, releases, crash monitoring. Interview panelist for the engineering org.</li>
+        </ul>
+      </article>
+
+      <article class="row">
+        <div class="row-top">
+          <div>
+            <h3>Senior Studio Engineer</h3>
+            <p class="row-org">Deloitte Digital · Colorado</p>
+          </div>
+          <span class="row-dates">2018 — 2021</span>
+        </div>
+        <ul class="row-points">
+          <li>Led iOS work for clients including <strong>Apple, Chipotle, Waste Management</strong>, and the State of Texas.</li>
+          <li>Built an AR app for the Denver studio using Apple's ARKit.</li>
+          <li>Built an immersive LED wall for a conference booth using WeMo APIs and a macOS app.</li>
+          <li>Built a kegerator project reading temperature and humidity from kegs via Raspberry Pi, Python and AWS.</li>
+        </ul>
+      </article>
+
+      <article class="row">
+        <div class="row-top">
+          <div>
+            <h3>Technical Specialist</h3>
+            <p class="row-org">Citiustech (DaVita) · Colorado</p>
+          </div>
+          <span class="row-dates">2011 — 2018</span>
+        </div>
+        <ul class="row-points">
+          <li>Led a team redesigning a native iPad healthcare app for nephrologists.</li>
+          <li>Built an iPhone app to streamline the physician order-signing process.</li>
+          <li>Introduced VIPER, a module-driven architecture, and built the org's code review process.</li>
+        </ul>
+      </article>
+
+      <article class="row">
+        <div class="row-top">
+          <div>
+            <h3>Software Engineer</h3>
+            <p class="row-org">Infosys Technologies · India</p>
+          </div>
+          <span class="row-dates">2008 — 2011</span>
+        </div>
+        <ul class="row-points">
+          <li>Led module and integration testing for Lowe's using PeopleSoft's HRMS module.</li>
+          <li>Requirement analysis, test scripting and execution across ERP projects.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <p class="section-label">Skills</p>
+    <h2>What I build with.</h2>
+
+    <div class="grouped-list grouped-list-compact">
+      <div class="row row-compact">
+        <span class="row-key">iOS</span>
+        <span class="row-val">Swift, SwiftUI, Objective‑C, MVVM, VIPER, MVC</span>
+      </div>
+      <div class="row row-compact">
+        <span class="row-key">Leadership</span>
+        <span class="row-val">Tech leadership, people management, hiring</span>
+      </div>
+      <div class="row row-compact">
+        <span class="row-key">Practice</span>
+        <span class="row-val">Agile — Scrum &amp; Kanban, unit testing, TDD</span>
+      </div>
+      <div class="row row-compact">
+        <span class="row-key">Tooling</span>
+        <span class="row-val">Git, Swift PM, Carthage, CocoaPods</span>
+      </div>
+      <div class="row row-compact">
+        <span class="row-key">Also</span>
+        <span class="row-val">Python, Django, AWS</span>
       </div>
     </div>
-  </aside>
+  </section>
 
-  <!-- Scrolling detail panel -->
-  <main class="content">
+  <section id="education" class="section">
+    <p class="section-label">Education</p>
+    <h2>Along the way.</h2>
 
-    <section id="profile" class="panel">
-      <h2>Profile</h2>
-      <p class="lede">Sixteen years across healthcare, retail and e-commerce — building products from zero to one, scaling the ones that work, and leading the teams that ship them.</p>
-      <p>Currently leading iOS engineering at Wayfair. Along the way: an AR app built with ARKit, a native iPad app for nephrologists, and a fair amount of time spent mentoring engineers who now lead teams of their own.</p>
-    </section>
-
-    <section id="experience" class="panel">
-      <h2>Experience</h2>
-
-      <ol class="timeline">
-
-        <li class="role">
-          <div class="role-when">
-            <span class="dates">2021 — Present</span>
-            <span class="place">Colorado</span>
-          </div>
-          <div class="role-body">
-            <h3>Senior Software Engineer, Team Lead</h3>
-            <p class="org">Wayfair</p>
-            <ul>
-              <li>Leads a team of 5 iOS engineers on the Shop squad, covering Browse and product-detail experiences.</li>
-              <li>Led biometric login using WebAuthn for passwordless sign-in — a ~95.2% login success rate.</li>
-              <li>Led bringing order status onto the app homepage as a path to discovery and engagement — a $30M/year lift in GMV.</li>
-              <li>Part of the iOS critical team: app store submissions, releases, adoption and crash monitoring.</li>
-              <li>Partners closely with EM, PM and QA across teams, and interviews candidates for the engineering org.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="role">
-          <div class="role-when">
-            <span class="dates">2018 — 2021</span>
-            <span class="place">Colorado</span>
-          </div>
-          <div class="role-body">
-            <h3>Senior Studio Engineer</h3>
-            <p class="org">Deloitte Digital</p>
-            <ul>
-              <li>Led iOS engineering for client work including Apple, Chipotle, Waste Management and the State of Texas.</li>
-              <li>Built an AR app for the Denver studio using Apple's ARKit.</li>
-              <li>Built an immersive LED wall experience for a conference booth, using WeMo APIs and a macOS application.</li>
-              <li>Built a kegerator project reading temperature and humidity from kegs via Raspberry Pi, Python and AWS.</li>
-              <li>Interview panelist for engineering hiring.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="role">
-          <div class="role-when">
-            <span class="dates">2011 — 2018</span>
-            <span class="place">Colorado</span>
-          </div>
-          <div class="role-body">
-            <h3>Technical Specialist</h3>
-            <p class="org">Citiustech (DaVita)</p>
-            <ul>
-              <li>Led a team redesigning and building a native iPad healthcare app for nephrologists.</li>
-              <li>Built an iPhone app to streamline the physician order-signing process.</li>
-              <li>Part of the architecture team defining technical strategy.</li>
-              <li>Introduced VIPER, a module-driven development approach, to the team.</li>
-              <li>Built a code review process later rolled out across the organization.</li>
-              <li>Assisted DevOps with app store submissions and releases.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="role">
-          <div class="role-when">
-            <span class="dates">2008 — 2011</span>
-            <span class="place">India</span>
-          </div>
-          <div class="role-body">
-            <h3>Software Engineer</h3>
-            <p class="org">Infosys Technologies</p>
-            <ul>
-              <li>Led module and integration testing for Lowe's using PeopleSoft's HRMS module.</li>
-              <li>Requirement analysis, test scripting and execution for ERP projects.</li>
-            </ul>
-          </div>
-        </li>
-
-      </ol>
-    </section>
-
-    <section id="skills" class="panel">
-      <h2>Skills</h2>
-      <div class="skill-groups">
-        <div class="skill-group">
-          <h3>iOS</h3>
-          <p>Swift, SwiftUI, Objective-C, MVVM, VIPER, MVC</p>
-        </div>
-        <div class="skill-group">
-          <h3>Leadership</h3>
-          <p>Tech leadership, people management, hiring, cross-team partnership</p>
-        </div>
-        <div class="skill-group">
-          <h3>Practice</h3>
-          <p>Agile — Scrum and Kanban, unit testing, TDD</p>
-        </div>
-        <div class="skill-group">
-          <h3>Tooling</h3>
-          <p>Git, Swift PM, Carthage, CocoaPods</p>
-        </div>
-        <div class="skill-group">
-          <h3>Also</h3>
-          <p>Python, Django, AWS</p>
-        </div>
+    <div class="grouped-list grouped-list-compact">
+      <div class="row row-compact">
+        <span class="row-key">2024 — 2027</span>
+        <span class="row-val"><strong>M.S. Computer Science</strong> · Georgia Institute of Technology · in progress</span>
       </div>
-    </section>
-
-    <section id="education" class="panel">
-      <h2>Education</h2>
-      <div class="edu-item">
-        <span class="dates">2024 — 2027</span>
-        <div>
-          <h3>M.S. Computer Science</h3>
-          <p class="org">Georgia Institute of Technology · in progress</p>
-        </div>
+      <div class="row row-compact">
+        <span class="row-key">2004 — 2008</span>
+        <span class="row-val"><strong>B.E.</strong> · University of Mumbai</span>
       </div>
-      <div class="edu-item">
-        <span class="dates">2004 — 2008</span>
-        <div>
-          <h3>B.E.</h3>
-          <p class="org">University of Mumbai</p>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="panel panel-contact">
-      <h2>Contact</h2>
-      <p class="lede">Open to a conversation about iOS engineering, team leadership, or the next thing to build.</p>
-      <div class="contact-links">
-        <a href="mailto:rohitnatraj@gmail.com">rohitnatraj@gmail.com</a>
-        <a href="https://www.linkedin.com/in/rohitnatraj" target="_blank" rel="noopener">linkedin.com/in/rohitnatraj</a>
-      </div>
-    </section>
+  <section id="contact" class="section section-contact">
+    <p class="section-label">Contact</p>
+    <h2>Let's talk.</h2>
+    <p class="hero-sub">Open to a conversation about iOS engineering, team leadership, or the next thing worth building.</p>
+    <div class="hero-actions">
+      <a href="mailto:rohitnatraj@gmail.com" class="btn btn-primary">rohitnatraj@gmail.com</a>
+      <a href="https://www.linkedin.com/in/rohitnatraj" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+    </div>
+  </section>
 
-    <footer class="foot">
-      <p>Built by hand, hosted on GitHub Pages.</p>
-    </footer>
+  <footer class="foot">
+    <p>© 2026 Rohit Natraj · Built &amp; hosted on GitHub Pages.</p>
+  </footer>
 
-  </main>
-</div>
+</main>
 
 </body>
 </html>
