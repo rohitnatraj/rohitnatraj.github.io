@@ -289,6 +289,69 @@ a { color: inherit; text-decoration: none; }
   font-size: 15px;
 }
 
+/* ---------- Apps: App Store style rows ---------- */
+
+.app-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  color: var(--ink);
+  transition: background 0.15s ease;
+}
+
+.app-row:hover, .app-row:focus-visible {
+  background: #FAFAFC;
+}
+
+.app-icon {
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+}
+
+.app-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.app-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.app-meta {
+  font-size: 13px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.app-note {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.app-cta {
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--blue);
+  background: var(--blue-soft);
+  padding: 6px 14px;
+  border-radius: 980px;
+}
+
 /* ---------- Contact ---------- */
 
 .section-contact {
@@ -319,4 +382,8 @@ a { color: inherit; text-decoration: none; }
   .card-grid { grid-template-columns: 1fr; }
 
   .row-key { flex-basis: 110px; }
+
+  .app-row { padding: 14px 18px; gap: 12px; }
+  .app-icon { flex-basis: 44px; width: 44px; height: 44px; font-size: 14px; }
+  .app-cta { display: none; }
 }
